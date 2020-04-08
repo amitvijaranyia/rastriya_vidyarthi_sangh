@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/viewMoreButton"-->
+<!--            android:layout_alignTop="@+id/tvName"-->
+<!--            android:layout_alignBottom="@+id/tvName"-->
+<!--            android:tint="#666666"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfilePicture"
+            android:layout_alignParentEnd="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@id/tvName"
+            android:layout_alignBottom="@id/tvEmailIdValue"
+            android:src="@drawable/rvs_flag"
+            app:civ_border_color="#000"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tvName"
+            tools:text="Amit Vijaranyia"
+            android:textStyle="bold|italic"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#006600"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvDesignationOfMember"
+            android:text="@string/string_designation"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#008000"
+            android:layout_below="@id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvContactDetailsText"
+            android:layout_below="@id/tvDesignationOfMember"
+            android:text="@string/contact_details"
+            android:textSize="16sp"
+            android:paddingTop="5dp"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_alignStart="@id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvMobileNumber"
+            android:text="@string/contact_mobile_number"
+            android:textSize="16sp"
+            android:layout_below="@id/tvContactDetailsText"
+            android:layout_alignStart="@id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/tvMobileNumberValue"
+            tools:text="+918700815218"
+            android:textSize="16sp"
+            android:textColor="@color/color_contact_ids"
+            android:background="@color/transparent"
+            android:layout_toEndOf="@id/tvMobileNumber"
+            android:layout_alignTop="@id/tvMobileNumber"
+            android:layout_alignBottom="@id/tvMobileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvEmailId"
+            android:text="@string/contact_email_id"
+            android:textSize="16sp"
+            android:layout_below="@id/tvMobileNumber"
+            android:layout_alignStart="@id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/tvEmailIdValue"
+            tools:text="amitvijaranyia@gmail.com"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="@color/color_contact_ids"
+            android:background="@color/transparent"
+            android:layout_toEndOf="@id/tvEmailId"
+            android:layout_alignTop="@id/tvEmailId"
+            android:layout_alignBottom="@id/tvEmailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvFacebookId"
+            android:text="@string/contact_facebook_id"
+            android:textSize="16sp"
+            android:layout_below="@id/tvEmailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/tvFacebookIdValue"
+            tools:text="www.facebook.com"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textAlignment="viewStart"
+            android:textColor="@color/color_contact_ids"
+            android:ellipsize="marquee"
+            android:maxLines="2"
+            android:background="@color/transparent"
+            android:layout_toEndOf="@id/tvFacebookId"
+            android:layout_alignTop="@id/tvFacebookId"
+            android:layout_alignBottom="@id/tvFacebookId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

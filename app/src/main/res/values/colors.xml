@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff3333</color>
+    <color name="colorPrimaryDark">#cc0000</color>
+    <color name="colorAccent">#009900</color>
+
+    //list_cwc_member
+    <color name="color_contact_ids">#b30000</color>
+
+    //adapter group members
+    <color name="color_empty_college_group_member">#616470</color>
+
+    //list item events
+    <color name="color_time_dim_gray">#5f6268</color>
+    <color name="color_name_dark_slate_blue">#3c5998</color>
+    <color name="color_description_dark_slate_gray">#393a3e</color>
+</resources>

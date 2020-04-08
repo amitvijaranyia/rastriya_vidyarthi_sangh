@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "660477688804",
+    "firebase_url": "https://rastriya-vidyarthi-sangh.firebaseio.com",
+    "project_id": "rastriya-vidyarthi-sangh",
+    "storage_bucket": "rastriya-vidyarthi-sangh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660477688804:android:cbd1cbf2c14a99252be5f1",
+        "android_client_info": {
+          "package_name": "com.example.rastriyavidyarthisangh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660477688804-2crh9j0jql721s69pa1g3fe0cd2iidu7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rastriyavidyarthisangh",
+            "certificate_hash": "a94236113743d7128efe07806c681b53421e877b"
+          }
+        },
+        {
+          "client_id": "660477688804-2m11v50lolm6m8jv0f2ltvv7fnpknd17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4-v6nQWz8P7dWHxcSYG2slTzLnTnk_hk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660477688804-2m11v50lolm6m8jv0f2ltvv7fnpknd17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

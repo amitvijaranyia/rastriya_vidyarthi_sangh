@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfilePicture"
+                android:src="@drawable/rvs_flag"
+                app:civ_border_color="#000"
+                app:civ_border_width="0dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/tvWhoPosted"
+                tools:text="Amit Vijaranyia"
+                android:textStyle="bold|italic"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="20sp"
+                android:textColor="@color/color_name_dark_slate_blue"
+                android:layout_marginStart="10dp"
+                android:layout_alignTop="@id/ivProfilePicture"
+                android:layout_toEndOf="@+id/ivProfilePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvTimePosted"
+                tools:text="12:30 23-Jan-2020"
+                android:textSize="14sp"
+                android:textColor="@color/color_time_dim_gray"
+                android:layout_alignStart="@id/tvWhoPosted"
+                android:layout_alignBottom="@id/ivProfilePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:id="@+id/ibMoreEvent"
+                android:src="@drawable/ic_more_event_item"
+                android:tint="#666666"
+                style="?attr/selectableItemBackgroundBorderless"
+                android:background="@android:color/white"
+                android:layout_alignTop="@id/tvWhoPosted"
+                android:layout_alignBottom="@id/tvWhoPosted"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDescriptionOfPost"
+                tools:text="This is to notify you all that i am testing this app. this time i scored a 8.62 cgpa in my 5th sem. also this sem which is 6th sem i am aiming to score 9.4 cgpa. lets hope that can make it. also next my placement is starting and i want 25lpa package. hoping that some company will realise my potential and will be willing to pay me as much as i deserve."
+                android:textSize="15sp"
+                android:textColor="@color/color_description_dark_slate_gray"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:background="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivEventImage"
+                    tools:src="@drawable/rvs_flag"
+                    android:scaleType="fitCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

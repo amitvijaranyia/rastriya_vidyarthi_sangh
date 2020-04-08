@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivRvsFlag"
+            android:src="@drawable/rvs_flag_2"
+            android:layout_width="150dp"
+            app:civ_border_color="#000"
+            app:civ_border_width="2dp"
+            android:layout_height="150dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#008000"
+        android:layout_weight="2"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:hint="@string/hint_enter_phone_number"
+                android:inputType="phone"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etCodeSent"
+                android:hint="@string/hint_enter_code_sent"
+                android:visibility="invisible"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:textColorHint="#fff"
+                android:layout_marginTop="26dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/etPhoneNumber"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:text="@string/btn_text_login"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="#0000ff"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/etCodeSent"
+                android:layout_marginTop="26dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnNotRegistered"
+                android:text="@string/btn_text_not_registered"
+                android:textColor="#fff"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_below="@id/btnLogin"
+                android:layout_alignEnd="@id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ProgressBar
+                android:id="@+id/pbLoadingIndicator"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+                android:layout_above="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

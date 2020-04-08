@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ff8080"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCwcMemberActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfilePicture"
+            android:layout_marginTop="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/empty_profile_picture"
+            app:civ_border_color="#000"
+            app:civ_border_width="1dp" />
+
+        <Button
+            android:id="@+id/btnPickImage"
+            android:text="@string/btn_text_pick_photo"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:hint="@string/hint_enter_name"
+            android:textColorHint="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etDesignation"
+            android:hint="@string/hint_enter_designation_of_member"
+            android:textColorHint="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:hint="@string/hint_enter_phone_number_of_member"
+            android:textColorHint="#fff"
+            android:inputType="phone"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etEmailId"
+            android:hint="@string/hint_enter_email_id_of_member"
+            android:textColorHint="#fff"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etFacebookId"
+            android:hint="@string/hint_enter_facebook_id_of_member"
+            android:textColorHint="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:id="@+id/pbLoadingIndicator"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnAddNewCwcMember"
+            android:text="@string/btn_text_add_member"
+            android:textColor="#fff"
+            android:background="#008000"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

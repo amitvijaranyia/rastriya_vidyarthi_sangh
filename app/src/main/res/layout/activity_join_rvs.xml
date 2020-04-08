@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorAccent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinRvsActivity">
+
+    <RelativeLayout
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivRvsFlag"
+            android:layout_alignStart="@+id/tvJoinRsv"
+            android:layout_alignEnd="@+id/tvJoinRsv"
+            android:src="@drawable/rvs_flag"
+            android:layout_width="120dp"
+            app:civ_border_color="#000"
+            app:civ_border_width="2dp"
+            android:layout_height="120dp"/>
+
+        <TextView
+            android:id="@+id/tvJoinRsv"
+            android:text="@string/join_rvs"
+            android:textStyle="bold|italic"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#0000ff"
+            android:layout_below="@+id/ivRvsFlag"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_marginStart="20dp"
+            android:hint="@string/hint_enter_name"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:maxLines="1"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/tvJoinRsv"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etCollege"
+            android:hint="@string/hint_enter_college"
+            android:maxLines="1"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:layout_alignBottom="@id/btnPickImage"
+            android:layout_alignStart="@id/etName"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivImage"
+            android:src="@drawable/ic_account_circle"
+            android:layout_toEndOf="@id/etName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/etName"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <Button
+            android:id="@+id/btnPickImage"
+            android:text="@string/btn_text_pick_photo"
+            android:tint="#666666"
+            android:textColor="#fff"
+            android:layout_alignStart="@id/ivImage"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/ivImage"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:hint="@string/hint_enter_phone_number"
+            android:inputType="phone"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/etCollege"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnJoin"
+            android:text="@string/btn_text_join_us"
+            android:background="#008000"
+            android:textColor="#fff"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/etPhoneNumber"
+            android:layout_alignStart="@id/etPhoneNumber"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnAlreadyMember"
+            android:layout_alignEnd="@id/btnJoin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="@string/btn_text_already_member_login"
+            android:textAlignment="viewStart"
+            android:textColor="#fff"
+            android:layout_below="@id/btnJoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etCodeSent"
+            android:hint="@string/hint_enter_code_sent"
+            android:paddingEnd="20dp"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@id/btnJoin"
+            android:layout_below="@id/btnAlreadyMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnVerifyNumber"
+            android:text="@string/btn_text_verify_number"
+            android:textColor="#fff"
+            android:visibility="invisible"
+            android:background="#003300"
+            android:layout_alignStart="@id/etCodeSent"
+            android:layout_below="@id/etCodeSent"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:id="@+id/pbLoadingIndicator"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</ScrollView>

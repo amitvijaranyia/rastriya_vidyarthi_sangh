@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Rastriya Vidyarthi Sangh</string>
+
+    //String of names of options in navigation drawer
+    <string name="nav_about_us">About Us</string>
+    <string name="nav_photos">Photos</string>
+    <string name="nav_rules_and_regulations">Rules and Regulations</string>
+    <string name="nav_cwc_members">CWC Members</string>
+    <string name="nav_group_members">Group Members</string>
+
+    //String of options used in communication section of navigation drawer
+    <string name="nav_whatsapp_group_join">Join Our WhatsApp Group</string>
+    <string name="nav_facebook_page_join">Facebook</string>
+    <string name="nav_map_us">Map Us</string>
+    <string name="nav_mail_us">Need help? Mail Us</string>
+    <string name="nav_call_us">Contact Us</string>
+    <string name="nav_join_rsv">Join Rsv</string>
+
+    //string used in menu_main_activity
+    <string name="menu_item_sign_out">Sign out</string>
+    <string name="menu_item_sign_in">Sign in</string>
+    <string name="menu_item_add_new_event">Add new Event</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    //string of contact numbers
+    <string name="call_avinash_jha">+918825289261</string>
+    <string name="call_dhiraj_mahato">+919716940522</string>
+
+    <string name="name_of_group_en">Rastriya Vidyarthi Sangh, Bharat</string>
+    <string name="name_of_group_hi">राष्ट्रीय विद्यार्थी संघ, भारत</string>
+
+    //list_cwc_members
+    <string name="contact_details">Contact Details</string>
+    <string name="contact_mobile_number">Mobile Number :- </string>
+    <string name="contact_facebook_id">Facebook :- </string>
+    <string name="contact_email_id">Email :- </string>
+    <string name="string_designation">Designation</string>
+
+    //constants used in activity_join_rvs
+    <string name="join_rvs">Join Rastriya Vidyarthi Sangh</string>
+    <string name="hint_enter_name">Enter your Name&#8230;</string>
+    <string name="hint_enter_college">Your College&#8230;</string>
+    <string name="btn_text_pick_photo">Pick Photo</string>
+    <string name="hint_enter_phone_number">Enter your 10 digits Number&#8230;</string>
+    <string name="btn_text_join_us">Join Us</string>
+    <string name="btn_text_already_member_login">Already Joined? Login</string>
+    <string name="hint_enter_code_sent">Enter Code sent to you&#8230;</string>
+    <string name="btn_text_verify_number">verify Number</string>
+
+    //constants used in JoinRvsActivity
+    <string name="empty_name_error">Name can not be Empty</string>
+    <string name="empty_phone_number_error">Invalid Phone Number</string>
+    <string name="btn_text_verifying">Verifying&#8230;</string>
+
+    //FireBase RDB related constants
+    <string name="json_object_users">users</string>
+    <string name="json_object_admin_access">admin_access</string>
+    <string name="json_object_cwc_members">cwc_members</string>
+    <string name="json_object_group_members">group_members</string>
+    <string name="json_object_events">events</string>
+    <string name="json_object_photos">photos</string>
+
+    //FireBase storage db related constants
+    <string name="json_object_group_members_photos">group_members_photos</string>
+    <string name="json_object_cwc_members_photos">cwc_members_photos</string>
+    <string name="json_object_events_photos">events_photos</string>
+    <string name="json_object_photos_storage">photos</string>
+
+    //constants used in activity_login
+    <string name="btn_text_login">Login</string>
+    <string name="btn_text_not_registered">Not a Member yet? Join us.</string>
+    <string name="btn_text_click_to_verify_otp">Click to verify otp</string>
+
+    //constants used in activity_group_members
+    <string name="string_college">College :- </string>
+    <string name="string_member_since">Member since :- </string>
+
+    //constants used in empty_view_utils
+    <string name="empty_college_group_member">Not provided</string>
+
+    //menu_cwc_members
+    <string name="menu_add_new_cwc_member">Add new CWC member</string>
+
+    //activity_add_cwc_member
+    <string name="hint_enter_designation_of_member">Enter Designation of the Member&#8230;</string>
+    <string name="hint_enter_email_id_of_member">Enter Email Id of the Member&#8230;</string>
+    <string name="hint_enter_phone_number_of_member">Enter 10 digits number of Member&#8230;</string>
+    <string name="hint_enter_facebook_id_of_member">Enter Facebook id of the Member&#8230;</string>
+    <string name="btn_text_add_member">Add Member</string>
+    <string name="btn_text_adding_new_member">Adding new member&#8230;</string>
+
+    //activity add new event
+    <string name="hint_description_of_event">Description&#8230;</string>
+    <string name="btn_text_upload_event">Upload Event</string>
+    <string name="btn_text_uploading_event">Uploading&#8230;</string>
+    <string name="intent_current_user_phone_number">current_user_phone_number</string>
+
+    //menu view more event
+    <string name="menu_title_text_delete_event">Delete Event</string>
+    <string name="menu_title_text_share_event">Share Event</string>
+
+    //menu add photos
+    <string name="menu_add_new_photo">Add New Photo</string>
+
+    //menu delete photo
+    <string name="menu_delete_photo">Delete photo</string>
+</resources>
