@@ -30,6 +30,6 @@ Here is the basic information of all the students who have successfully joined N
 <img src="Screenshot_20200409-180901_Rastriya Vidyarthi Sangh.jpg" width="200">
 
 Here is activity for joining the society. Phone number will be checked whether there is already any 
-account exist with the input mobile number and then FirebaseAuth will be used to authenticate the current phone number.
+account exist with the input mobile number and then FirebaseAuth is used to authenticate the current phone number.
 
 <img src="Screenshot_20200409-180922_Rastriya Vidyarthi Sangh.jpg" width="200">
