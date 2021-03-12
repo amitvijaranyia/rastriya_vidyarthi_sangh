@@ -33,3 +33,5 @@ Here is activity for joining the society. Phone number will be checked whether t
 account exist with the input mobile number and then FirebaseAuth is used to authenticate the current phone number.
 
 <img src="Screenshot_20200409-180922_Rastriya Vidyarthi Sangh.jpg" width="200">
+
+It is developed in Java, Android Studio.
